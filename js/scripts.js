@@ -7,7 +7,7 @@ $(function() {
     event.preventDefault();
     console.log(userName);
     if(userName.length === 0) {
-      $("#no-name").text("Please enter your name");
+      $("#no-name").show();
       $("#name").addClass("enter-name");
     } else {
       $("#form1").show();
@@ -39,7 +39,7 @@ $(document).ready(function() {
       }
     });
     var userName = $("#name").val();
-    $(".name-display").text(userName);
+    $(".name-display").text(userName + ",");
     $(".scoreDisplay").text(sum + "/60");
   });
 });

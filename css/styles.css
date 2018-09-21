@@ -34,6 +34,10 @@ form {
   line-height: 1px;
   text-align: left;
 }
+#no-name {
+  display: none;
+  margin-top: 2%;
+}
  .inputs {
   /* text-align: left;
   width: 10%;
