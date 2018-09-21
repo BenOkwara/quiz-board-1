@@ -1,0 +1,37 @@
+.form-group {
+  line-height: 1px;
+  text-align: left;
+}
+form {
+  text-align: center;
+  border: 1px solid black;
+  padding: 20px;
+  width: 60%;
+  border-radius: 10px;
+  background: white;
+}
+body {
+  margin: 0 auto;
+  line-height: 0.8em;
+  background:linear-gradient(to right, #c2e59c, #64b3f4);
+}
+ .inputs {
+  text-align: left;
+  width: 10%;
+  margin: 0 auto;
+}
+.fa-arrow-right:hover {
+  font-size: 18px;
+  display: relative;
+  left: 50px;
+}
+.arrow {
+  text-align: right;
+  padding-right: 50px;
+
+}
+label,input {
+  margin-right: 30px;
+  margin-left: 30px;
+  padding-left: 20px;
+}
