@@ -9,34 +9,49 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery.js"></script>
   <script src="js/scripts.js"></script>
+  <link rel="icon" href="images/icon.png">
   <title>Quiz Board</title>
 </head>
 <body>
   <div class="container">
     <h1 class="text-center h3">Test your JavaScript knowledge</h1>
-    <form id="form">
-      <div class="question1">
-        <p>1. What is JavaScript</p>
-        <div class="inputs">
-          <div class="form-group">
-            <input type="radio" name="js" id="language">
-            <label for="language">Language</label>
-          </div>
-          <div class="form-group">
-            <input type="radio" name="js" id="sport">
-            <label for="sport">Sport</label>
-          </div>
-          <div class="form-group">
-            <input type="radio" name="js" id="food">
-            <label for="food">Food</label>
-          </div>
-          <div class="form-group">
-            <input type="radio" name="js" id="fun">
-            <label for="fun">Fun</label>
+    <form>
+      <div id="intro">
+        <h3>Welcome to the best JavaScript Quiz.</h3>
+        <p>Test what you have covered so far by answering these questions</p>
+        <div class="form-group">
+          <label for="name">Full Names</label>
+          <input class="form-control" type="text" id="name">
+        </div>
+        <div class="form-group">
+          <label for="name">Email Address</label>
+          <input class="form-control" type="text" id="name">
+        </div>
+        <button id="start-btn" class="btn btn-info">START</button>
+      </div>
+      <div id="form1">
+        <div class="question1">
+          <p>1. What is JavaScript</p>
+          <div class="inputs">
+            <div class="form-group">
+              <input type="radio" name="js" id="language">
+              <label value="10" for="language">Programming Language</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" name="js" id="sport">
+              <label value="0" for="sport">Asian Language</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" name="js" id="food">
+              <label value="0" for="food">Java Upgrade</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" name="js" id="fun">
+              <label value="0" for="fun">None of the above</label>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="question2">
+        <div class="question2">
           <p>2. What is JavaScript</p>
           <div class="inputs">
             <div class="form-group">
@@ -58,32 +73,107 @@
           </div>
         </div>
         <div class="question3">
-            <p>3. What is JavaScript</p>
-            <div class="inputs">
-              <div class="form-group">
+          <p>3. What is JavaScript</p>
+          <div class="inputs">
+            <div class="form-group">
               <input type="radio" name="js" id="language">
               <label for="language">Language</label>
-              </div>
-              <div class="form-group">
+            </div>
+            <div class="form-group">
               <input type="radio" name="js" id="sport">
               <label for="sport">Sport</label>
-              </div>
-              <div class="form-group">
+            </div>
+            <div class="form-group">
               <input type="radio" name="js" id="food">
               <label for="food">Food</label>
-              </div>
-              <div class="form-group">
+            </div>
+            <div class="form-group">
               <input type="radio" name="js" id="fun">
               <label for="fun">Fun</label>
-              </div>
             </div>
           </div>
-          <div class="arrow">
-            <i class="fas fa-arrow-right text-right"></i>
+        </div>
+        <div class="arrow" id="arrow-right">
+          <i class="fas fa-arrow-right text-right"></i>
+        </div>
+      </div>
+      <div id="form2">
+        <div class="question1">
+          <p>1. What is JavaScript</p>
+          <div class="inputs">
+            <div class="form-group">
+              <input type="radio" name="js" id="language">
+              <label for="language">Language</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" name="js" id="sport">
+              <label for="sport">Sport</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" name="js" id="food">
+              <label for="food">Food</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" name="js" id="fun">
+              <label for="fun">Fun</label>
+            </div>
           </div>
+        </div>
+        <div class="question2">
+          <p>2. What is JavaScript</p>
+          <div class="inputs">
+            <div class="form-group">
+              <input type="radio" name="js" id="language">
+              <label for="language">Language</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" name="js" id="sport">
+              <label for="sport">Sport</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" name="js" id="food">
+              <label for="food">Food</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" name="js" id="fun">
+              <label for="fun">Fun</label>
+            </div>
+          </div>
+        </div>
+        <div class="question3">
+          <p>3. What is JavaScript</p>
+          <div class="inputs">
+            <div class="form-group">
+              <input type="radio" name="js" id="language">
+              <label for="language">Language</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" name="js" id="sport">
+              <label for="sport">Sport</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" name="js" id="food">
+              <label for="food">Food</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" name="js" id="fun">
+              <label for="fun">Fun</label>
+            </div>
+          </div>
+        </div>
+        <div class="arrow" id="arrow-left">
+          <i class="fas fa-arrow-left text-left"></i>
+        </div>
+        <button id="submit" class="btn btn-success">Submit</button>
+      </div>
+      <div id="score">
+        <p class="name-display"></p>
+        <p>Your score is:</p>
+        <p class="scoreDisplay"></p>
+        <button class="btn btn-danger">Retake Quiz</button>
 
+      </div>
     </form>
   </div>
-
 </body>
 </html>

@@ -1,6 +1,12 @@
-.form-group {
-  line-height: 1px;
-  text-align: left;
+body {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.8em;
+  /* background:linear-gradient(to right, #c2e59c, #64b3f4); */
+  letter-spacing: 2px;
+}
+.container {
+  text-align: center;
 }
 form {
   text-align: center;
@@ -9,29 +15,59 @@ form {
   width: 60%;
   border-radius: 10px;
   background: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+  height: auto;
+  margin: 2% auto;
+  position: relative;
 }
-body {
-  margin: 0 auto;
-  line-height: 0.8em;
-  background:linear-gradient(to right, #c2e59c, #64b3f4);
+.form-group {
+  line-height: 1px;
+  text-align: left;
 }
  .inputs {
-  text-align: left;
+  /* text-align: left;
   width: 10%;
+  margin: 0 auto; */
+  /* border: 1px solid black; */
   margin: 0 auto;
+  position: relative;
+  right: 2%;
 }
-.fa-arrow-right:hover {
+.arrow:hover {
   font-size: 18px;
-  display: relative;
-  left: 50px;
+  cursor: pointer;
+}
+.fa-arrow-right {
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
 }
 .arrow {
   text-align: right;
   padding-right: 50px;
-
+  display: inline-block;
 }
-label,input {
-  margin-right: 30px;
-  margin-left: 30px;
-  padding-left: 20px;
+#arrow-left {
+  text-align: left;
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
 }
+#form2,#form1 {
+  display: none;
+}
+ /* label,input {
+   margin-right: 5px;
+  margin-left: 5px; 
+  padding-left: 5px;
+}  */
+label {
+  margin-left: 10px;
+  letter-spacing: 2px;
+}
+#score {
+  display: none;
+} 
