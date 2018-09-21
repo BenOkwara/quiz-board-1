@@ -1,6 +1,6 @@
-
-// ######USER INTERFACE#####
+var sum = 0;
 $(function() {
+  
   $("#start-btn").click(function(event) {
     event.preventDefault();
     $("#form1").show();
@@ -19,4 +19,8 @@ $(function() {
     $("#score").show();
     $("#form2").hide();
   })
+})
+
+$(document).ready(function() {
+  
 })
