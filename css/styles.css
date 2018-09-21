@@ -78,3 +78,14 @@ label {
 #score {
   display: none;
 } 
+.name-display {
+  font-size: 27px;
+  font-family: Bangers;
+}
+.scoreDisplay {
+  font-size: 25px;
+  font-family: Bangers;
+}
+.enter-name {
+  border: 2px solid red;
+}
