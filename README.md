@@ -23,7 +23,7 @@ Use this command in your terminal
 
 ### Setup
 1. To access this project, you will need to clone it.
-2. Use this command in your terminal
+2. Use this command in your terminal.
 `git clone https://github.com/marvinChomba/quiz-board`
 3. __Enjoy__
 

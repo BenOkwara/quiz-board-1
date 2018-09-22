@@ -9,6 +9,8 @@ function scoreCalculator(userValue) {
     }
   });
 }
+
+
 // USER INTERFACE LOGIC
 $(function() {
   $("#start-btn").click(function(event) {
