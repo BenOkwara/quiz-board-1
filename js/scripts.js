@@ -1,7 +1,6 @@
 var sum = 0;
 var userName = $("#name").val();
 $(function() {
-  
   $("#start-btn").click(function(event) {
     var userName = $("#name").val();
     event.preventDefault();
@@ -26,6 +25,10 @@ $(function() {
     event.preventDefault();
     $("#score").show();
     $("#form2").hide();
+  })
+  $("#retake").click(function(event) {
+    event.preventDefault();
+    location.reload();
   })
 })
 

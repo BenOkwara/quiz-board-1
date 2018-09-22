@@ -4,10 +4,12 @@ body {
   line-height: 0.8em;
   letter-spacing: 2px;
   background: linear-gradient(to right, #373b44, #4286f4);
+  font-family: Poriet One;
+  font-size: 1.1em;
 }
 h1 {
   padding-top: 10px;
-  font-family: Bangers;
+  font-family: Permanent Marker;
 }
 form p {
   text-align: left;
@@ -16,7 +18,6 @@ form p {
   text-align: center;
 }
 form {
-  border: 1px solid black;
   padding: 30px;
   padding-bottom: 15px;
   width: 60%;
@@ -39,6 +40,17 @@ form {
   display: none;
   margin-top: 2%;
 }
+#start-btn {
+  color: white;
+  background: #4286f4;
+  outline-style: none;
+
+}
+#start-btn:hover {
+  background: white;
+  color: #4286f4;
+  border: 1px solid #4286f4;
+}
  .inputs {
   /* text-align: left;
   width: 10%;
@@ -54,11 +66,12 @@ input[type=radio] {
 .arrow:hover {
   font-size: 18px;
   cursor: pointer;
+  color: #4286f4;
 }
 .circle {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   background: inherit;
   border: 1px solid #4286f4;
   display: absolute;
@@ -71,6 +84,17 @@ input[type=radio] {
 }
 input[type=radio]:checked + .circle {
   background: #4286f4;;
+}
+#submit {
+  color: white;
+  outline-style: none;
+  background: #28B463;
+  border: 1px solid #28B463;
+}
+#submit:hover {
+  background: white;
+  color: #28B463;
+
 }
 .fa-arrow-right {
   position: absolute;
@@ -105,11 +129,11 @@ label {
 } 
 .name-display {
   font-size: 27px;
-  font-family: Bangers;
+  font-family: Permanent Marker;
 }
 .scoreDisplay {
   font-size: 25px;
-  font-family: Bangers;
+  font-family: Permanent Marker;
 }
 .enter-name {
   border: 2px solid red;
