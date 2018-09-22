@@ -1,13 +1,24 @@
+// BUSINESS LOGIC
 var sum = 0;
-var userName = $("#name").val();
+function scoreCalculator(userValue) {
+  var names = ["js", "year", "framework","function","dom","link"];
+  names.forEach(function(name) {
+    var userValue = $("input:radio[name=" + name + "]:checked").val();
+    if(userValue === "10") {
+      sum+=10;
+    }
+  });
+}
+// USER INTERFACE LOGIC
 $(function() {
   $("#start-btn").click(function(event) {
-    var userName = $("#name").val();
     event.preventDefault();
-    console.log(userName);
-    if(userName.length === 0) {
+    var userFirstName = $("#firstName").val();
+    var userSecondName = $("#secondName").val();
+    if(userFirstName.length === 0 || userSecondName.length === 0) {
       $("#no-name").show();
-      $("#name").addClass("enter-name");
+      $("#firstName").addClass("enter-name");
+      $("#secondName").addClass("enter-name");
     } else {
       $("#form1").show();
       $("#intro").hide();
@@ -25,24 +36,18 @@ $(function() {
     event.preventDefault();
     $("#score").show();
     $("#form2").hide();
+    scoreCalculator();
+    var userFirstName = $("#firstName").val();
+    var userSecondName = $("#secondName").val()
+    if(sum <= 30) {
+      $(".name-display").text(`Nice try ${userFirstName} ${userSecondName},`);
+    } else {
+      $(".name-display").text(`Congratulations ${userFirstName} ${userSecondName},`);
+    }
+    $(".scoreDisplay").text(sum + "/60");
   })
   $("#retake").click(function(event) {
     event.preventDefault();
     location.reload();
   })
 })
-
-$(document).ready(function() {
-  $("#submit").click(function() {
-    var names = ["js", "year", "framework","function","dom","link"];
-    names.forEach(function(name) {
-      var userValue = $("input:radio[name=" + name + "]:checked").val();
-      if(userValue === "10") {
-        sum+=10;
-      }
-    });
-    var userName = $("#name").val();
-    $(".name-display").text(userName + ",");
-    $(".scoreDisplay").text(sum + "/60");
-  });
-});

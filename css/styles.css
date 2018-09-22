@@ -1,6 +1,4 @@
 body {
-  margin: 0 auto;
-  text-align: center;
   line-height: 0.8em;
   letter-spacing: 2px;
   background: linear-gradient(to right, #373b44, #4286f4);
@@ -9,7 +7,7 @@ body {
 }
 h1 {
   padding-top: 10px;
-  font-family: Permanent Marker;
+  font-family: Walter Turncoat;
 }
 form p {
   text-align: left;
@@ -23,10 +21,6 @@ form {
   width: 60%;
   border-radius: 10px;
   background:#ECF0F1;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-self: center;
   margin: 2% auto;
   position: relative;
 }
@@ -34,29 +28,27 @@ form {
 .form-group {
   /* line-height: 20px; */
   text-align: left;
-  display: block;
 }
 #no-name {
   display: none;
   margin-top: 2%;
 }
-#start-btn {
+#no-name span {
+  color: #4286f4;
+}
+#start-btn, #retake, #submit {
   color: white;
   background: #4286f4;
   outline-style: none;
-
 }
-#start-btn:hover {
+#start-btn:hover,
+#retake:hover,
+#submit:hover {
   background: white;
   color: #4286f4;
   border: 1px solid #4286f4;
 }
  .inputs {
-  /* text-align: left;
-  width: 10%;
-  margin: 0 auto; */
-  /* border: 1px solid black; */
-  margin: 0 auto;
   position: relative;
   left: 2%;
 }
@@ -86,41 +78,25 @@ input[type=radio] {
 input[type=radio]:checked + .circle {
   background: #4286f4;;
 }
-#submit {
-  color: white;
-  outline-style: none;
-  background: #28B463;
-  border: 1px solid #28B463;
-}
-#submit:hover {
-  background: white;
-  color: #28B463;
-
+.arrow {
+  text-align: right;
+  padding-right: 50px;
+  display: inline-block;
 }
 .fa-arrow-right {
   position: absolute;
   right: 10%;
   bottom: 5%;
 }
-.arrow {
-  text-align: right;
-  padding-right: 50px;
-  display: inline-block;
-}
 #arrow-left {
   text-align: left;
   position: absolute;
   left: 10%;
-  bottom: 5%;
+  bottom: 4%;
 }
 #form2,#form1 {
   display: none;
 }
- /* label,input {
-   margin-right: 5px;
-  margin-left: 5px; 
-  padding-left: 5px;
-}  */
 label {
   margin-left: 10px;
   letter-spacing: 2px;
@@ -130,11 +106,11 @@ label {
 } 
 .name-display {
   font-size: 27px;
-  font-family: Permanent Marker;
+  font-family: Walter Turncoat;
 }
 .scoreDisplay {
   font-size: 25px;
-  font-family: Permanent Marker;
+  font-family: Walter Turncoat;
 }
 .enter-name {
   border: 2px solid red;
@@ -147,5 +123,16 @@ label {
   }
   p {
     line-height: 20px;
+  }
+  .fa-arrow-right {
+    position: absolute;
+    right: 10%;
+    bottom: 3%;
+  }
+  #arrow-left {
+    text-align: left;
+    position: absolute;
+    left: 10%;
+    bottom: 2.5%;
   }
 }
