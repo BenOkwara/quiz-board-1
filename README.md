@@ -7,7 +7,7 @@ Marvin Chomba
 Quiz-Board is a web app that allows anyone to attempt a few questions to test their JavaScript knowledge.
 The questions are well-prepared and can be answered by both beginner developers and advanced developers
 
-###Technologies used
+### Technologies used
 1. HTML
 2. CSS
 3. Bootstrap
@@ -31,4 +31,5 @@ Use this command in your terminal
 You can view the live site [here](https://marvinchomba.github.io/quiz-board/)
 
 ### Licence
-This project is under the [MIT]() licence
+This project is under the [MIT](https://github.com/marvinChomba/quiz-board/blob/master/LICENSE) licence
+Copyright (c) 2018 marvinchomba
