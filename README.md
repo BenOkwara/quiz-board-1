@@ -31,4 +31,5 @@ Use this command in your terminal
 You can view the live site [here](https://marvinchomba.github.io/quiz-board/)
 
 ### Licence
-This project is under the [MIT]() licence
+This project is under the [MIT](https://github.com/marvinChomba/quiz-board/blob/master/LICENSE) licence
+Copyright (c) 2018 marvinchomba
