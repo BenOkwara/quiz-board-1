@@ -7,7 +7,7 @@ Marvin Chomba
 Quiz-Board is a web app that allows anyone to attempt a few questions to test their JavaScript knowledge.
 The questions are well-prepared and can be answered by both beginner developers and advanced developers
 
-###Technologies used
+### Technologies used
 1. HTML
 2. CSS
 3. Bootstrap

@@ -1,5 +1,5 @@
 body {
-  line-height: 0.8em;
+  line-height: 1.1em;
   letter-spacing: 2px;
   background: linear-gradient(to right, #373b44, #4286f4);
   font-family: Poriet One;
@@ -113,7 +113,7 @@ label {
   font-family: Walter Turncoat;
 }
 .enter-name {
-  border: 2px solid red;
+  border: 1px solid red;
 }
 
 /* RESPONSIVE DESIGN */
@@ -134,5 +134,8 @@ label {
     position: absolute;
     left: 10%;
     bottom: 2.5%;
+  }
+  .name-display {
+    line-height: 1.2em;
   }
 }

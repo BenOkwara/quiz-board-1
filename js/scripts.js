@@ -22,8 +22,8 @@ $(function() {
       $("#firstName").addClass("enter-name");
       $("#secondName").addClass("enter-name");
     } else {
-      $("#form1").show();
       $("#intro").hide();
+      $("#form1").show();
     }
   })
   $("#arrow-right").click(function() {
@@ -40,7 +40,7 @@ $(function() {
     $("#form2").hide();
     scoreCalculator();
     var userFirstName = $("#firstName").val();
-    var userSecondName = $("#secondName").val()
+    var userSecondName = $("#secondName").val();
     if(sum <= 30) {
       $(".name-display").text(`Nice try ${userFirstName} ${userSecondName},`);
     } else {
